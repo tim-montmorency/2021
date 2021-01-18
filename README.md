@@ -1,5 +1,5 @@
 # 2021
-receuil des projets du cours synthèse en technique d'intégration expérience interactive finissants TIM 2021
+Recueil des projets du cours synthèse en technique d'intégration expérience interactive finissants TIM 2021
 
 
 ### Déploiement 
