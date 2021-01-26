@@ -19,3 +19,10 @@ Pour aller plus loins, lire : https://www.vogella.com/tutorials/GitSubmodules/ar
 ```
 git submodule update --remote
 ```
+
+
+pour ajouter un projet : 
+
+```
+ git submodule add --depth 1 url.git
+```

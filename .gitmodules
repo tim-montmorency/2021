@@ -1,3 +1,12 @@
 [submodule "projets/66B-modele_de_projet"]
 	path = projets/66B-modele_de_projet
 	url = https://github.com/tim-montmorency/66B-modele_de_projet.git
+[submodule "projets/WillYouAct"]
+	path = projets/WillYouAct
+	url = https://github.com/NicolasReilly/WillYouAct
+[submodule "projets/les_chatoyants"]
+	path = projets/les_chatoyants
+	url = https://github.com/samcard01/les_chatoyants
+[submodule "projets/Spooky-tower"]
+	path = projets/Spooky-tower
+	url = https://github.com/Quollector/Spooky-tower
