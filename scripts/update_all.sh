@@ -1,5 +1,6 @@
-#git submodule foreach git pull main
+git submodule foreach git pull master
+git pull --recurse-submodules
 
 #git submodule update --recursive
 
-git pull --recurse-submodules
+#git pull --recurse-submodules
