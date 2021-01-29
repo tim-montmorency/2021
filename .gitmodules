@@ -13,6 +13,3 @@
 [submodule "projets/school_run"]
 	path = projets/school_run
 	url = https://github.com/pamelasanscartier/school_run.git
-[submodule "projets/Concerto"]
-	path = projets/Concerto
-	url = https://github.com/Mrm0u/Concerto
