@@ -1,57 +1,162 @@
+/* STRUCTURE GÉNÉRALE */
+
 body{
-    max-width: 1000px;
-    margin: 0 auto;
+    margin: 0;
+    background: url('medias/arriere_plan_full.jpg') no-repeat 0 0 black;
+    background-size: cover;
+    background-attachment: fixed;
 }
-section, footer {
+header, main, footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Newsreader', serif;  
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+}
+section {
     padding: 10px 40px 20px 40px;
 }
 
-/* PRÉSENTATION GÉNÉRALE */
-.presentation_generale {
+header{
+    font-family: 'Permanent Marker', cursive;
     text-align: center;
-    background-color: pink;
-}
-.presentation_generale h1 {
-    margin-bottom: 0;
-}
-.presentation_generale h3 {
-    margin-top: 0;
-}
-.presentation_generale p {
-    margin: 10px 100px;
-}
-
-/* PRÉSENTATION DES PROJETS */
-.presentation_projets {
-    text-align: center;
-    background-color: lightcoral;
-    margin: 2px 0;
-}
-.presentation_projets h2{
-    text-align: left;
-    margin: 15px 0px;
-}
-.presentation_projets ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-.presentation_projets li {
-    display: inline-block;
-    margin: 2px 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.2);
     position: relative;
 }
-.presentation_projets img {
-    width: 400px;
+header .inner{
+    text-align: left;
+    padding: 50px 0; 
+    overflow: hidden;
 }
-.presentation_projets a {
-    color: red;
+
+/* CONTENU ENTÊTE (HEADER) */
+
+h1{
+    font-size: 80px; 
+    font-weight: 400;
+    margin: 0 0 20px 0;
 }
-.presentation_projets a:link, a:visited {
-    color: red;
+@media screen and (max-width: 799px) {
+    h1{
+        font-size: 2em;
+        font-size: 14vw; 
+    }
 }
-.presentation_projets a:hover, a:active {
-    color:white;
+
+h1, h2{
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    font-weight: 400;
+}
+
+a#logo_pandeme{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 0 20px;
+    background: url('medias/logo_arriere_noir.svg') no-repeat 0 10px;
+    width:auto; 
+    margin: 0px auto;
+    background-size: contain;
+}
+
+ul#info_evenement{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+ul#info_evenement li{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.spotlight{
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    
+    ul#info_evenement{
+        font-size: 16px;
+    }
+
+    .spotlight{ 
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: -30px;
+    }
+
+    .spotlight_g{
+        left: -90px;
+        margin-left: 0;
+        top: -60px;  
+    }
+
+    .spotlight_m{
+        right: -280px;
+        margin-left: 0;
+        top: -80px;  
+    }
+
+    .spotlight_d{
+        right: -277px;
+        top: -60px;  
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .spotlight_g{
+        left: 50%;
+        margin-left: -850px;
+        top: -30px;
+    }
+    .spotlight_m{
+        right: -80px;
+    }
+    .spotlight_d{
+        display: block;
+    }
+    
+}
+
+/* SECTION PRÉSENTATION DES PROJETS */
+
+.presentation_projets {
+    text-align: center;
+    background-color: #3E484F;
+    padding: 10px 5px 0 5px;
+    position: relative;
+}
+
+.presentation_projets h2{
+    text-align: center;
+    margin: 0px 0px 0px 12px;
+    line-height: 1;
+    display: none;
+}
+
+.presentation_projets .projet {
+    position: relative;
+    display: block;
+    padding: 8px 3px 6px 3px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.container_projets .projet img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
 }
 
 .desc_projet {
@@ -63,12 +168,142 @@ section, footer {
 .desc_projet h4 {
     margin-bottom: 0;
 }
-.desc_projet h5 {
-    margin-top: 10px;
+
+.presentation_projets a {
+    color: white;
+}
+.presentation_projets a:link, a:visited {
+    color: white;
+}
+.presentation_projets a:hover, a:active {
+    color:white;
 }
 
-/* PIED DE PAGE */
+@media screen and (min-width: 1240px) {
+   
+    .presentation_projets {
+        margin: 0 -20px;
+    }
+
+    .presentation_projets:after{
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: 0 solid transparent;
+        border-right-width: 0px;
+        border-left-width: 20px;
+        border-bottom: 14px solid #2F363B;
+        position: absolute;
+        top: -14px;
+        left: 0;
+    }
+    .presentation_projets:before{
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: 0 solid transparent;
+        border-bottom-width: 0px;
+        border-top-width: 14px;
+        border-left: 20px solid #2F363B;
+        position: absolute;
+        top: -14px;
+        right: 0;
+    }
+
+    .container_projets .projet {
+        flex: 1 1 0px;
+        transition: transform 500ms;
+    }
+
+    .container_projets:focus-within .projet,
+    .container_projets:hover .projet {
+        transform: translateX(-25%);
+    }
+
+    .container_projets .projet:focus ~ .projet,
+    .container_projets :hover ~ .projet {
+        transform: translateX(25%);
+    }
+
+    .container_projets .projet:focus,
+    .container_projets .projet:hover {
+        transform: scale(1.5);
+        z-index: 1;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .presentation_projets h2{
+        text-align: left;
+        display: block;
+    }
+    .container_projets {
+        display: flex;
+    }   
+  
+}
+
+
+
+
+/* SECTION PRÉSENTATION GÉNÉRALE */
+
+.presentation_generale {
+    text-align: left;
+    padding: 50px 80px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.pan-demo-definition{
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+.pan-demo-definition img{
+    width: 170px;
+}
+
+.container_cols {
+    display: flex;
+    justify-content: space-between;
+}
+.container_cols.reverse{
+    flex-direction: row-reverse;
+}
+
+.col{
+    width: 48%;
+}
+
+
+@media screen and (max-width: 992px) {
+    .presentation_generale {
+        text-align: left;
+        padding: 50px 30px;
+    }
+    .container_cols {
+        display: block;
+    }
+   
+    
+    .col{
+        width: 100%;
+    }
+}
+
+
+/* PIED DE PAGE (FOOTER) */
 footer {
-    background-color: gray;
-    text-align: right;
+    text-align: center;
+    padding: 30px 20px 15px 20px;
+    box-sizing: border-box;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.4);
 }
