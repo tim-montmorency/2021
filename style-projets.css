@@ -1,17 +1,68 @@
+/* STRUCTURE GÉNÉRALE */
 body{
-    max-width: 1000px;
-    margin: 0 auto;
+   
+    margin: 0;
 }
 header {
     padding: 20px 20px;
+    background: transparent;
+}
+main, footer{
+    background-color: rgba(0,0,0,0.5);
 }
 section, footer {
     padding: 10px 40px 20px 40px;
 }
 
+/* CONTENU ENTÊTE (HEADER) */
+header .inner{
+    padding: 0;
+}
+
+a#logo_pandeme{
+    background-position: 0 0;
+}
+
+.logo_container{
+    font-size: 38px;
+}
+
+.spotlight_m{
+    top: -100px;
+    right: -400px;
+}
+
+@media screen and (max-width: 1499px) {
+
+    .spotlight{
+        display: none;
+    }
+    
+}
+
 /* PRÉSENTATION DU PROJET */
+section.hero{
+    padding: 0;
+}
+
+.hero img{
+    width: 100%;
+    max-width: 100%;
+}
+
+main h1{
+    font-size: 40px;
+}
+
 .presentation_projet {
-    background-color:lightgreen;
+   
+}
+
+.presentation_projet a:link, a:visited {
+    color: white;
+}
+.presentation_projet a:hover, a:active {
+    color:white;
 }
 .galerie_projet ul {
     margin: 0;
@@ -29,8 +80,11 @@ section, footer {
 
 /* JOURNAL DE CRÉATION */
 .journal_creation {
-    background-color: lightsalmon;
     margin: 2px 0;
+}
+.journal_creation img{
+    width: 100%;
+    max-width: 100%;
 }
 .journal_creation h2 {
     text-align: center;
@@ -41,6 +95,6 @@ section, footer {
 
 /* PIED DE PAGE */
 footer {
-    background-color: gray;
-    text-align: right;
+
+  
 }

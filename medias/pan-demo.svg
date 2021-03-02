@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="215.745" height="83.167" viewBox="0 0 215.745 83.167">
+  <defs>
+    <filter id="Tracé_69" x="81.248" y="0" width="134.497" height="83.167" filterUnits="userSpaceOnUse">
+      <feOffset dx="-3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.478"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_53" data-name="Groupe 53" transform="translate(-595.981 -540.902)">
+    <path id="Tracé_68" data-name="Tracé 68" d="M612.119,913.333,600,962.667l101.333,8,21.333-57.333Z" transform="translate(-4.019 -348.833)" fill="#d1d1d1"/>
+    <text id="pan" transform="translate(627.737 601.084) rotate(-3)" font-size="40" font-family="Newsreader"><tspan x="0" y="0">pan</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 595.98, 540.9)" filter="url(#Tracé_69)">
+      <path id="Tracé_69-2" data-name="Tracé 69" d="M609.352,945.5l-8.019,47.833,109.333,17.333s9.352-65.167,6.685-65.167Z" transform="translate(-508.09 -939.5)" fill="#d1d1d1"/>
+    </g>
+    <text id="démo" transform="matrix(0.985, 0.174, -0.174, 0.985, 701.925, 576.198)" font-size="40" font-family="Newsreader"><tspan x="0" y="0">démo</tspan></text>
+    <text id="tout" transform="translate(666.255 613.519) rotate(-3)" font-size="14" font-family="Newsreader"><tspan x="0" y="0">tout</tspan></text>
+    <text id="peuple" transform="matrix(0.985, 0.174, -0.174, 0.985, 742.979, 595.594)" font-size="14" font-family="Newsreader"><tspan x="0" y="0">peuple</tspan></text>
+  </g>
+</svg>
