@@ -57,6 +57,13 @@ main h1{
 .presentation_projet {
    
 }
+
+.presentation_projet a:link, a:visited {
+    color: white;
+}
+.presentation_projet a:hover, a:active {
+    color:white;
+}
 .galerie_projet ul {
     margin: 0;
     padding: 0;
@@ -73,8 +80,11 @@ main h1{
 
 /* JOURNAL DE CRÉATION */
 .journal_creation {
-    
     margin: 2px 0;
+}
+.journal_creation img{
+    width: 100%;
+    max-width: 100%;
 }
 .journal_creation h2 {
     text-align: center;
