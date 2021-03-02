@@ -1,6 +1,23 @@
+/* STYLES PAGE PRINCIPALE */
+/* à supprimer plus tard */
+body{
+    margin: 0;
+    background: url('medias/arriere_plan_full.jpg') no-repeat 0 0 black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header, main, footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Newsreader', serif;  
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+}
+
+
+
 /* STRUCTURE GÉNÉRALE */
 body{
-   
     margin: 0;
 }
 header {
