@@ -112,6 +112,11 @@ main h1{
     width: 100%;
     max-width: 100%;
 }
+
+.journal_creation a img{
+    width: 200px;
+    max-width: 100%;
+}
 .journal_creation h2 {
     text-align: center;
 }
