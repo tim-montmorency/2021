@@ -80,7 +80,10 @@ main h1{
     font-size: 40px;
 }
 
-.presentation_projet {
+.presentation_projet p{
+    text-align: left;
+    font-size: 15px;
+    line-height: 25px;
    
 }
 

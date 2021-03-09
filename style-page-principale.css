@@ -278,6 +278,10 @@ ul#info_evenement li{
 .col{
     width: 48%;
 }
+.link_event {
+    display: flex;
+    justify-content: center;
+}
 
 
 @media screen and (max-width: 992px) {
@@ -286,6 +290,10 @@ ul#info_evenement li{
         padding: 50px 30px;
     }
     .container_cols {
+        display: block;
+    }
+
+    .link_event {
         display: block;
     }
    
@@ -306,4 +314,30 @@ footer {
 footer a{
     text-decoration: none;
     color: rgba(255,255,255,0.4);
+}
+
+a.btn{
+    display: block;
+    padding: 10px 20px; 
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #213337;
+}
+a.btn,
+a.btn:link,
+a.btn:active,
+a.btn:hover,
+a.btn:visited,
+.presentation_projet a.btn,
+.presentation_projet a.btn:link,
+.presentation_projet a.btn:active,
+.presentation_projet a.btn:hover,
+.presentation_projet a.btn:visited{
+    display: block;
+    padding: 10px 20px; 
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #213337;
 }
