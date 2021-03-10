@@ -6,6 +6,10 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+#page{
+    overflow:hidden;
+
+}
 header, main, footer{
     max-width: 1200px;
     margin: 0 auto;
@@ -25,7 +29,6 @@ header{
     justify-content: center;
     background-color: rgba(0,0,0,0.2);
     position: relative;
-    overflow: hidden;
 }
 header .inner{
     text-align: left;
@@ -38,7 +41,8 @@ header .inner{
 h1{
     font-size: 80px; 
     font-weight: 400;
-    margin: 0 0 20px 0;
+    margin: 0 0 13px 0;
+    text-align: center;
 }
 @media screen and (max-width: 799px) {
     h1{
@@ -75,12 +79,23 @@ ul#info_evenement{
 ul#info_evenement li{
     margin: 0;
     padding: 0;
-    margin-bottom: 5px;
 }
+@media screen and (min-width: 390px) {
+    ul#info_evenement li.f-interactif{
+        padding: 4px 0 4px 50px;
+        background: url("medias/fleche_interactif_blanche.svg") no-repeat 0 0;
+    }
+    ul#info_evenement li.f-diffusion{
+        padding: 4px 0 4px 50px;
+        background: url("medias/fleche_diffusion_blanche.svg") no-repeat 6px 7px;
+    }
+}
+
 
 .spotlight{
     display: none;
 }
+
 
 @media screen and (min-width: 600px) {
     
@@ -158,6 +173,10 @@ ul#info_evenement li{
     display: block;
     max-width: 100%;
     width: 100%;
+    filter: grayscale(60%);
+}
+a.projet:hover img {
+    filter: grayscale(0%);
 }
 
 .desc_projet {
@@ -167,7 +186,13 @@ ul#info_evenement li{
     bottom: -24px;
     background-color: #502927;
     padding: 8px 2px 6px 2px;
+    transition: background-color 0.5s;
 }
+
+a.projet:hover .desc_projet {
+    background-color:#A23A35;
+}
+
 .desc_projet h4 {
     margin: 0;
 }
