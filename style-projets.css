@@ -11,6 +11,8 @@ header, main, footer{
     margin: 0 auto;
     font-family: 'Newsreader', serif;  
     background-color: rgba(0,0,0,0.4);
+}
+header, main{
     color: white;
 }
 header{
@@ -81,9 +83,30 @@ main h1{
     text-align: left;
 }
 
-.link_event h3{
+.btns_evenement h3{
     font-family: 'Permanent Marker', cursive;
     font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.btns_evenement h3 span{
+    font-size: 80%;
+}
+
+.btns_evenement .f-interactif,
+.btns_evenement .f-diffusion{
+    margin-bottom: 40px;
+}
+
+.btns_evenement .f-interactif h3{
+    padding-left: 50px;
+    background: url("medias/fleche_interactif_blanche.svg") no-repeat 0 0;
+}
+
+.btns_evenement .f-diffusion h3{
+    padding-left: 50px;
+    background: url("medias/fleche_diffusion_blanche.svg") no-repeat 6px 7px;
 }
 
 .presentation_projet p{
@@ -98,23 +121,66 @@ main h1{
 .presentation_projet a:hover, a:active {
     color:white;
 }
-.galerie_projet ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+
+.f-interactif .btn{
+    background: url(medias/fleche_interactif_verte.svg) no-repeat 95% 5px;
 }
-.galerie_projet li {
-    display: inline-block;
-    margin: 1px 2px;
-    position: relative;
+.f-diffusion .btn{
+    background: url(medias/fleche_diffusion_verte.svg) no-repeat 98% 10px;
 }
+
+ul.photos_finissants, .photos_finissants li{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul.photos_finissants{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+ul.photos_finissants li{
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+
+.photos_finissants img {
+    width: 100%;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 8px;
+ 
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 900px) {
+    .gallery{
+        justify-content: center;
+    }
+}
+.gallery a{
+    display: block;
+    margin: 0 3px;
+}
+
+
 .galerie_projet img {
     width: 200px;
 }
 
 /* JOURNAL DE CRÉATION */
 .journal_creation {
-    margin: 2px 0;
+    margin: 0;
 }
 .journal_creation img{
     width: 100%;
