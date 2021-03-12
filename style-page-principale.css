@@ -80,6 +80,7 @@ ul#info_evenement li{
     margin: 0;
     padding: 0;
 }
+
 @media screen and (min-width: 390px) {
     ul#info_evenement li.f-interactif{
         padding: 4px 0 4px 50px;

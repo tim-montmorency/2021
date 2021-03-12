@@ -78,13 +78,18 @@ section.hero{
 
 main h1{
     font-size: 40px;
+    text-align: left;
+}
+
+.link_event h3{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 300;
 }
 
 .presentation_projet p{
     text-align: left;
     font-size: 15px;
-    line-height: 25px;
-   
+    line-height: 25px; 
 }
 
 .presentation_projet a:link, a:visited {
