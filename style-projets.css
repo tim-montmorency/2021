@@ -155,7 +155,6 @@ ul.photos_finissants li{
     border-radius: 50%;
     display: block;
     margin: 0 auto 8px;
- 
 }
 
 .gallery{
@@ -171,11 +170,14 @@ ul.photos_finissants li{
 .gallery a{
     display: block;
     margin: 0 3px;
+    width: 180px;
+    height: 135px;
+    overflow: hidden;
 }
 
 
 .galerie_projet img {
-    width: 180px;
+    width: 240px;
 }
 
 /* JOURNAL DE CRÉATION */
@@ -196,6 +198,11 @@ ul.photos_finissants li{
 }
 .semaine_x {
     text-align: left;
+}
+
+.journal_creation a{
+    color: white;
+    text-decoration: underline;
 }
 
 /* PIED DE PAGE */
