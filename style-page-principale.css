@@ -35,6 +35,11 @@ header .inner{
     padding: 50px 0; 
     overflow: hidden;
 }
+body a,
+header a,
+.presentation_generale a{
+    color: white;
+}
 
 /* CONTENU ENTÊTE (HEADER) */
 
@@ -73,12 +78,12 @@ ul#info_evenement{
     margin: 0;
     padding: 0;
     padding-left: 20px;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 ul#info_evenement li{
     margin: 0;
-    padding: 0;
+    padding: 5px 0;
 }
 
 @media screen and (min-width: 390px) {
@@ -164,10 +169,10 @@ ul#info_evenement li{
 .presentation_projets .projet {
     position: relative;
     display: block;
-    padding: 8px 3px 6px 3px;
+    padding: 8px 6px 6px 6px;
     box-sizing: border-box;
     width: 100%;
-    max-width: 400px;
+    max-width: 550px;
     margin: 0 auto 32px auto;
 }
 .container_projets .projet img {
@@ -182,11 +187,11 @@ a.projet:hover img {
 
 .desc_projet {
     position: absolute;
-    left: 3px;
-    right: 3px;
+    left: 6px;
+    right: 6px;
     bottom: -24px;
     background-color: #502927;
-    padding: 8px 2px 6px 2px;
+    padding: 8px 3px 6px 3px;
     transition: background-color 0.5s;
 }
 
@@ -264,15 +269,20 @@ a.projet:hover .desc_projet {
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
     .presentation_projets h2{
         text-align: left;
         display: block;
+        margin: 30px 15px
     }
     .container_projets {
         display: flex;
+        flex-wrap: wrap;
     }   
-  
+
+    .presentation_projets .projet {
+       width: 50%;
+    }   
 }
 
 
