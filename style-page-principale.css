@@ -294,7 +294,7 @@ h3{
 
 .presentation_generale {
     text-align: left;
-    padding: 50px 80px;
+    padding: 40px 80px;
     font-size: 15px;
     line-height: 25px;
 }
@@ -328,7 +328,7 @@ h3{
 @media screen and (max-width: 992px) {
     .presentation_generale {
         text-align: left;
-        padding: 50px 30px;
+        padding: 40px 30px;
     }
     .container_cols {
         display: block;
