@@ -288,6 +288,10 @@ a.projet:hover .desc_projet {
 
 /* SECTION PRÉSENTATION GÉNÉRALE */
 
+h3{
+    margin-top: 70px;
+}
+
 .presentation_generale {
     text-align: left;
     padding: 50px 80px;
@@ -358,17 +362,22 @@ footer a:hover{
 
 a.btn{
     display: block;
-    padding: 13px 20px 10px 20px; 
+    padding: 18px 20px 15px 20px; 
     border-radius: 3px;
     font-weight: 600;
     text-decoration: none;
     background-color: #ffffff;
     color: #213337;
-    max-width: 600px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 901px) and (max-width: 992px) {
     a.btn{
-        max-width: 210px;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    a.btn{
+        max-width: 100%;
     }
 }
 

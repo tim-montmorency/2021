@@ -82,6 +82,11 @@ main h1{
     font-size: 40px;
     text-align: left;
 }
+@media screen and (max-width: 992px) {
+    h1{
+        display: none;
+    }  
+}  
 
 .btns_evenement h3{
     font-family: 'Permanent Marker', cursive;
@@ -198,6 +203,8 @@ ul.photos_finissants li{
 }
 .semaine_x {
     text-align: left;
+    border-top: 1px solid #666666;
+    padding-bottom: 70px;
 }
 
 .journal_creation a{
